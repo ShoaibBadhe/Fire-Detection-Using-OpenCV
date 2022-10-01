@@ -18,7 +18,7 @@ while True:
     for x,y,w,h in fire:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),3)
         cv2.putText(frame,'Fire',(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
-        print('Fire Detected,Bhaag Beta')
+        print('Fire_Detected,Bhaag_Beta')
         playsound('audio.mp3')
     cv2.imshow('Fire Detection',frame)
     cv2.waitKey(1)

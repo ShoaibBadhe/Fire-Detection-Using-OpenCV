@@ -8,9 +8,6 @@ video = cv2.VideoCapture(0)
 address = 'http://IP - ADDRESS/video'
 video.open(address)
 
-#when running on laptop
-#video = cv2.VideoCapture(0)
-
 while True:
     flag,frame = video.read()
     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)

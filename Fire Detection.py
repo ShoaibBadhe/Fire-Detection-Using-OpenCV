@@ -1,7 +1,7 @@
 import cv2
 from playsound import playsound
 
-fire_cascade = cv2.CascadeClassifier('fire_detection.xml')
+fireCascade = cv2.CascadeClassifier('fire_detection.xml')
 
 #used ip-webcam application when running through mobile
 video = cv2.VideoCapture(0)

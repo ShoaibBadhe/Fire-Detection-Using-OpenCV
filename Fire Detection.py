@@ -11,7 +11,7 @@ video.open(address)
 while True:
     flag,frame = video.read()
     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-    fire = fire_cascade.detectMultiScale(gray,1.1,5)
+    fire = fireCascade.detectMultiScale(gray,1.1,5)
     for x,y,w,h in fire:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),3)
         cv2.putText(frame,'Fire',(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)

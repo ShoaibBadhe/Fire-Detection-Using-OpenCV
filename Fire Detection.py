@@ -5,7 +5,7 @@ fire_cascade = cv2.CascadeClassifier('fire_detection.xml')
 
 #used ip-webcam application when running through mobile
 video = cv2.VideoCapture(0)
-address = 'http://IP - ADDRESS/video'
+address = 'http://IP ADDRESS/video'
 video.open(address)
 
 #when running on laptop

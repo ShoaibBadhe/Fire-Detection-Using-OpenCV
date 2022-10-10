@@ -3,7 +3,6 @@ from playsound import playsound
 
 fireCascade = cv2.CascadeClassifier('fire_detection.xml')
 
-#used ip-webcam application when running through mobile
 video = cv2.VideoCapture(0)
 address = 'http://IPADDRESS/video'
 video.open(address)
